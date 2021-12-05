@@ -7,10 +7,47 @@
 
 import UIKit
 
-class ImageViewController: UIViewController {
+class ImageViewController: UIViewController,
+                           UIImagePickerControllerDelegate,
+                           UINavigationControllerDelegate {
+    @IBOutlet private weak var photoImageView: UIImageView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    }
+
+    @IBAction private func didTapCameraShooting(_ sender: Any) {
+        let sourceType = UIImagePickerController.SourceType.camera
+        if UIImagePickerController.isSourceTypeAvailable(sourceType) {
+            let imagePicker = UIImagePickerController()
+            imagePicker.sourceType = sourceType
+            imagePicker.delegate = self
+            present(imagePicker, animated: true, completion: nil)
+        }
+    }
+
+    @IBAction private func didTapPhotoLibrary(_ sender: Any) {
+        let sourceType = UIImagePickerController.SourceType.photoLibrary
+        if UIImagePickerController.isSourceTypeAvailable(sourceType) {
+            let imagePicker = UIImagePickerController()
+            imagePicker.sourceType = sourceType
+            imagePicker.delegate = self
+            present(imagePicker, animated: true, completion: nil)
+        }
+    }
+
+    // MARK: - UIImagePickerControllerDelegate
+    func imagePickerController(_ picker: UIImagePickerController,
+                               didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]) {
+        if let pickedImage = info[.originalImage] as? UIImage {
+            photoImageView.contentMode = .scaleAspectFit
+            photoImageView.image = pickedImage
+        }
+        picker.dismiss(animated: true, completion: nil)
+    }
+
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        picker.dismiss(animated: true, completion: nil)
     }
 }
 

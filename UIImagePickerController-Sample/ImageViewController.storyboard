@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -15,13 +16,49 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mwh-VR-leg">
+                                <rect key="frame" x="0.0" y="44" width="414" height="745"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rjs-2s-26e">
+                                <rect key="frame" x="255" y="809" width="139" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="フォトライブラリ"/>
+                                <connections>
+                                    <action selector="didTapPhotoLibrary:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="xvS-d3-I52"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1fD-1S-YKd">
+                                <rect key="frame" x="20" y="809" width="87" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="カメラ撮影"/>
+                                <connections>
+                                    <action selector="didTapCameraShooting:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="jgn-hb-qqK"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Rjs-2s-26e" secondAttribute="trailing" constant="20" id="2SU-qi-P2g"/>
+                            <constraint firstItem="mwh-VR-leg" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="4dy-48-DXd"/>
+                            <constraint firstItem="1fD-1S-YKd" firstAttribute="top" secondItem="mwh-VR-leg" secondAttribute="bottom" constant="20" id="FKA-Fn-ow9"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Rjs-2s-26e" secondAttribute="bottom" constant="20" id="Fcz-We-2ZS"/>
+                            <constraint firstItem="1fD-1S-YKd" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="JbC-Ze-qaU"/>
+                            <constraint firstItem="mwh-VR-leg" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="a18-9K-2tj"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="1fD-1S-YKd" secondAttribute="bottom" constant="20" id="d2c-Gg-sCh"/>
+                            <constraint firstItem="mwh-VR-leg" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="gOy-cw-eDQ"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="photoImageView" destination="mwh-VR-leg" id="je3-LZ-1wS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="152" y="102"/>
+            <point key="canvasLocation" x="150.72463768115944" y="101.78571428571428"/>
         </scene>
     </scenes>
     <resources>
