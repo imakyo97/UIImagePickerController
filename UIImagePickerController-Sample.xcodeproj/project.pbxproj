@@ -16,6 +16,9 @@
 		478B8ED6275C81EA002762D8 /* UIImagePickerController_SampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478B8ED5275C81EA002762D8 /* UIImagePickerController_SampleUITests.swift */; };
 		478B8ED8275C81EA002762D8 /* UIImagePickerController_SampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478B8ED7275C81EA002762D8 /* UIImagePickerController_SampleUITestsLaunchTests.swift */; };
 		478B8EE5275C83AD002762D8 /* ImageViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 478B8EE4275C83AD002762D8 /* ImageViewController.storyboard */; };
+		6D106E4BB2CFDB44F576BCCD /* Pods_UIImagePickerController_Sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D331DD3BCA5E2E82641689D5 /* Pods_UIImagePickerController_Sample.framework */; };
+		ADA5CA2A5EC75E80BB772A9E /* Pods_UIImagePickerController_SampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49C8F8578184082F0A796305 /* Pods_UIImagePickerController_SampleTests.framework */; };
+		FAA12E7A93306C0F575BEE18 /* Pods_UIImagePickerController_Sample_UIImagePickerController_SampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90DCBC1E27E9681F90D8B52F /* Pods_UIImagePickerController_Sample_UIImagePickerController_SampleUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0295C95038BAB1B83D9899A9 /* Pods-UIImagePickerController-Sample-UIImagePickerController-SampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIImagePickerController-Sample-UIImagePickerController-SampleUITests.release.xcconfig"; path = "Target Support Files/Pods-UIImagePickerController-Sample-UIImagePickerController-SampleUITests/Pods-UIImagePickerController-Sample-UIImagePickerController-SampleUITests.release.xcconfig"; sourceTree = "<group>"; };
+		39365CF8D7721C4E676306AD /* Pods-UIImagePickerController-SampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIImagePickerController-SampleTests.debug.xcconfig"; path = "Target Support Files/Pods-UIImagePickerController-SampleTests/Pods-UIImagePickerController-SampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		478B8EB1275C81E8002762D8 /* UIImagePickerController-Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UIImagePickerController-Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		478B8EB4275C81E8002762D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		478B8EB6275C81E8002762D8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +54,13 @@
 		478B8ED5275C81EA002762D8 /* UIImagePickerController_SampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImagePickerController_SampleUITests.swift; sourceTree = "<group>"; };
 		478B8ED7275C81EA002762D8 /* UIImagePickerController_SampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImagePickerController_SampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		478B8EE4275C83AD002762D8 /* ImageViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ImageViewController.storyboard; sourceTree = "<group>"; };
+		49C8F8578184082F0A796305 /* Pods_UIImagePickerController_SampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIImagePickerController_SampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CEEC75DABC81B4CA870EF73 /* Pods-UIImagePickerController-Sample-UIImagePickerController-SampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIImagePickerController-Sample-UIImagePickerController-SampleUITests.debug.xcconfig"; path = "Target Support Files/Pods-UIImagePickerController-Sample-UIImagePickerController-SampleUITests/Pods-UIImagePickerController-Sample-UIImagePickerController-SampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7043BBBA34D2D8FE0A9083DB /* Pods-UIImagePickerController-SampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIImagePickerController-SampleTests.release.xcconfig"; path = "Target Support Files/Pods-UIImagePickerController-SampleTests/Pods-UIImagePickerController-SampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		760040120CE522F6B3848D86 /* Pods-UIImagePickerController-Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIImagePickerController-Sample.release.xcconfig"; path = "Target Support Files/Pods-UIImagePickerController-Sample/Pods-UIImagePickerController-Sample.release.xcconfig"; sourceTree = "<group>"; };
+		90DCBC1E27E9681F90D8B52F /* Pods_UIImagePickerController_Sample_UIImagePickerController_SampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIImagePickerController_Sample_UIImagePickerController_SampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDBE6BC75277D4F247D7EB4F /* Pods-UIImagePickerController-Sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIImagePickerController-Sample.debug.xcconfig"; path = "Target Support Files/Pods-UIImagePickerController-Sample/Pods-UIImagePickerController-Sample.debug.xcconfig"; sourceTree = "<group>"; };
+		D331DD3BCA5E2E82641689D5 /* Pods_UIImagePickerController_Sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIImagePickerController_Sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D106E4BB2CFDB44F576BCCD /* Pods_UIImagePickerController_Sample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADA5CA2A5EC75E80BB772A9E /* Pods_UIImagePickerController_SampleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAA12E7A93306C0F575BEE18 /* Pods_UIImagePickerController_Sample_UIImagePickerController_SampleUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +98,8 @@
 				478B8ECA275C81EA002762D8 /* UIImagePickerController-SampleTests */,
 				478B8ED4275C81EA002762D8 /* UIImagePickerController-SampleUITests */,
 				478B8EB2275C81E8002762D8 /* Products */,
+				7A74D85835DC370B508B4332 /* Pods */,
+				737712051E003CE9BC397FFA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +144,29 @@
 			path = "UIImagePickerController-SampleUITests";
 			sourceTree = "<group>";
 		};
+		737712051E003CE9BC397FFA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D331DD3BCA5E2E82641689D5 /* Pods_UIImagePickerController_Sample.framework */,
+				90DCBC1E27E9681F90D8B52F /* Pods_UIImagePickerController_Sample_UIImagePickerController_SampleUITests.framework */,
+				49C8F8578184082F0A796305 /* Pods_UIImagePickerController_SampleTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7A74D85835DC370B508B4332 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CDBE6BC75277D4F247D7EB4F /* Pods-UIImagePickerController-Sample.debug.xcconfig */,
+				760040120CE522F6B3848D86 /* Pods-UIImagePickerController-Sample.release.xcconfig */,
+				5CEEC75DABC81B4CA870EF73 /* Pods-UIImagePickerController-Sample-UIImagePickerController-SampleUITests.debug.xcconfig */,
+				0295C95038BAB1B83D9899A9 /* Pods-UIImagePickerController-Sample-UIImagePickerController-SampleUITests.release.xcconfig */,
+				39365CF8D7721C4E676306AD /* Pods-UIImagePickerController-SampleTests.debug.xcconfig */,
+				7043BBBA34D2D8FE0A9083DB /* Pods-UIImagePickerController-SampleTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +174,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 478B8EDB275C81EA002762D8 /* Build configuration list for PBXNativeTarget "UIImagePickerController-Sample" */;
 			buildPhases = (
+				2FC90F0E8D8F3C11731C2A4B /* [CP] Check Pods Manifest.lock */,
 				478B8EAD275C81E8002762D8 /* Sources */,
 				478B8EAE275C81E8002762D8 /* Frameworks */,
 				478B8EAF275C81E8002762D8 /* Resources */,
+				478B8EE6275C8903002762D8 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -151,6 +193,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 478B8EDE275C81EA002762D8 /* Build configuration list for PBXNativeTarget "UIImagePickerController-SampleTests" */;
 			buildPhases = (
+				303FB33345AE7B759C08EA62 /* [CP] Check Pods Manifest.lock */,
 				478B8EC3275C81EA002762D8 /* Sources */,
 				478B8EC4275C81EA002762D8 /* Frameworks */,
 				478B8EC5275C81EA002762D8 /* Resources */,
@@ -169,6 +212,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 478B8EE1275C81EA002762D8 /* Build configuration list for PBXNativeTarget "UIImagePickerController-SampleUITests" */;
 			buildPhases = (
+				EE870206C9B9C97522635686 /* [CP] Check Pods Manifest.lock */,
 				478B8ECD275C81EA002762D8 /* Sources */,
 				478B8ECE275C81EA002762D8 /* Frameworks */,
 				478B8ECF275C81EA002762D8 /* Resources */,
@@ -252,6 +296,92 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2FC90F0E8D8F3C11731C2A4B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UIImagePickerController-Sample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		303FB33345AE7B759C08EA62 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UIImagePickerController-SampleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		478B8EE6275C8903002762D8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		EE870206C9B9C97522635686 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UIImagePickerController-Sample-UIImagePickerController-SampleUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		478B8EAD275C81E8002762D8 /* Sources */ = {
@@ -426,6 +556,7 @@
 		};
 		478B8EDC275C81EA002762D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDBE6BC75277D4F247D7EB4F /* Pods-UIImagePickerController-Sample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -438,6 +569,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -453,6 +585,7 @@
 		};
 		478B8EDD275C81EA002762D8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 760040120CE522F6B3848D86 /* Pods-UIImagePickerController-Sample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -465,6 +598,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -480,6 +614,7 @@
 		};
 		478B8EDF275C81EA002762D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39365CF8D7721C4E676306AD /* Pods-UIImagePickerController-SampleTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -505,6 +640,7 @@
 		};
 		478B8EE0275C81EA002762D8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7043BBBA34D2D8FE0A9083DB /* Pods-UIImagePickerController-SampleTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -530,6 +666,7 @@
 		};
 		478B8EE2275C81EA002762D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CEEC75DABC81B4CA870EF73 /* Pods-UIImagePickerController-Sample-UIImagePickerController-SampleUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -553,6 +690,7 @@
 		};
 		478B8EE3275C81EA002762D8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0295C95038BAB1B83D9899A9 /* Pods-UIImagePickerController-Sample-UIImagePickerController-SampleUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
