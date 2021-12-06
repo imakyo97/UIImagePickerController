@@ -6,12 +6,13 @@
 //
 
 import UIKit
+import PhotosUI
 
 class ImageViewController: UIViewController,
                            UIImagePickerControllerDelegate,
-                           UINavigationControllerDelegate {
+                           UINavigationControllerDelegate,
+                           PHPickerViewControllerDelegate {
     @IBOutlet private weak var photoImageView: UIImageView!
-
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -27,13 +28,10 @@ class ImageViewController: UIViewController,
     }
 
     @IBAction private func didTapPhotoLibrary(_ sender: Any) {
-        let sourceType = UIImagePickerController.SourceType.photoLibrary
-        if UIImagePickerController.isSourceTypeAvailable(sourceType) {
-            let imagePicker = UIImagePickerController()
-            imagePicker.sourceType = sourceType
-            imagePicker.delegate = self
-            present(imagePicker, animated: true, completion: nil)
-        }
+        let configuration = PHPickerConfiguration()
+        let picker = PHPickerViewController(configuration: configuration)
+        picker.delegate = self
+        present(picker, animated: true, completion: nil)
     }
 
     // MARK: - UIImagePickerControllerDelegate
@@ -48,6 +46,19 @@ class ImageViewController: UIViewController,
 
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         picker.dismiss(animated: true, completion: nil)
+    }
+
+    // MARK: - PHPickerViewControllerDelegate
+    func picker(_ picker: PHPickerViewController, didFinishPicking results: [PHPickerResult]) {
+        dismiss(animated: true, completion: nil)
+        if let itemProvider = results.first?.itemProvider, itemProvider.canLoadObject(ofClass: UIImage.self) {
+            itemProvider.loadObject(ofClass: UIImage.self) { [weak self] image, _ in
+                DispatchQueue.main.async {
+                    guard let strongSelf = self, let image = image as? UIImage else { return }
+                    strongSelf.photoImageView.image = image
+                }
+            }
+        }
     }
 }
 
